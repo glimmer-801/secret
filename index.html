@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Anniversary ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PASSWORD SCREEN -->
+<div id="password-screen" class="container">
+  <h2>🔐 Enter Our Secret Code</h2>
+  <input type="password" id="pass-input" placeholder="Our secret word ❤️">
+  <button onclick="checkPassword()">Unlock 💖</button>
+  <p id="pass-msg"></p>
+</div>
+
+<!-- COUNTDOWN SCREEN -->
+<div id="main-content" class="container hidden">
+  <h1>💌 Our Anniversary Countdown</h1>
+  <div id="countdown"></div>
+  <div id="love-letter"></div>
+</div>
+
+<!-- ANNIVERSARY PAGE -->
+<div id="anniversary" class="hidden">
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Happy Anniversary ❤️</h1>
+    <p>Forever starts today, and every day with you is my dream come true.</p>
+    <audio autoplay loop controls>
+      <source src="music/ed_sheeran_perfect.mp3" type="audio/mp3">
+    </audio>
+  </section>
+
+  <!-- Long Love Letter -->
+
+  <section class="love-letter-section">
+    <h2>My Love Letter 💖</h2>
+    <p id="letter-text"></p>
+    <button onclick="revealExtra()" id="read-more-btn">Read More 💌</button>
+    <div id="message">
+    <p id="extra-text" class="hidden">
+      You are my laughter, my calm, my heart. Every moment with you is magic. I promise to be yours forever. ✨
+      I don’t know if words will ever be enough to explain what you mean to me, but I still want to try—because you deserve to hear it again and again.
+
+From the moment you came into my life, everything felt a little warmer, a little calmer, and a lot more beautiful. You have this way of making even ordinary moments feel special, simply by being you. Your smile feels like home to me, and your presence gives me a comfort I never knew I needed.
+
+I love how you understand me, even when I don’t say much. I love how you support me, encourage me, and believe in me—sometimes more than I believe in myself. With you, I feel seen, valued, and deeply cared for.
+
+You are not just someone I love; you are someone I choose—every single day. Through happy moments, difficult days, laughter, and silence, my heart keeps choosing you. I’m grateful for your patience, your kindness, and the love you give so effortlessly.
+
+Thank you for being my safe place, my happiness, and my favorite person. No matter where life takes us, I want you to know that my heart is always with you.
+
+Forever yours,
+❤️
+
+    </p>
+    </div>
+  </section>
+  
+
+  <!-- Photo Timeline -->
+  <section class="timeline">
+    <h2>Our Memories 📸</h2>
+    <div class="slideshow">
+      <img id="slide" src="./images/photo1.jpeg" alt="Memory 1">
+      <p id="slide-text">Our first day together 💕</p>
+    </div>
+  </section>
+
+  <!-- Secret Surprise -->
+  <section class="surprise-section">
+    <h2>Secret Surprise 🎁</h2>
+    <button onclick="surprise()">Click Here 💌</button>
+  </section>
+
+  <!-- Floating Hearts Container -->
+  <div id="hearts-container"></div>
+</div>
+
+<!-- Confetti -->
+<canvas id="confetti-canvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
