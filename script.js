@@ -12,13 +12,13 @@ function checkPassword() {
 
 // ================== ANNIVERSARY DATE ==================
 const now = new Date();
-// let year = now.getFullYear();
-// let anniversaryDate = new Date(year, 0, 20, 0, 0, 0);
-// if (now > anniversaryDate) anniversaryDate = new Date(year + 1, 0, 20, 0, 0, 0);
+let year = now.getFullYear();
+let anniversaryDate = new Date(year, 0, 20, 0, 0, 0);
+if (now > anniversaryDate) anniversaryDate = new Date(year + 1, 0, 20, 0, 0, 0);
 
-// For testing only: 10 seconds countdown
-let anniversaryDate = new Date();
-anniversaryDate.setSeconds(anniversaryDate.getSeconds() + 10);
+// // For testing only: 10 seconds countdown
+// let anniversaryDate = new Date();
+// anniversaryDate.setSeconds(anniversaryDate.getSeconds() + 10);
 
 // ================== COUNTDOWN ==================
 function updateCountdown() {
